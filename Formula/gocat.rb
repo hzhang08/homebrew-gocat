@@ -8,8 +8,8 @@ class Gocat < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-        url "https://github.com/hzhang08/gocat/releases/download/0.1.3/gocat-0.1.3-macos.tar.gz"
-        sha256 "d0035ce9df06c1212d2e846a90ed911602ae4f4debe830b034cceccefd563134"
+        url "https://github.com/hzhang08/gocat/releases/download/0.1.4/gocat-0.1.4-macos-aarch64.tar.gz"
+        sha256 "2c1ad3a476d236d7a7995c0e11b5f1f7849253f6aa706c39b7c45bae0d91eb71"
 
         def install
             bin.install "gocat"
@@ -17,8 +17,8 @@ class Gocat < Formula
     end
 
     if Hardware::CPU.intel?
-        url "https://github.com/hzhang08/gocat/releases/download/0.1.3-x86_64/gocat-0.1.3-macos-x86_64.tar.gz"
-        sha256 "a2f323a7041e8036f810d80d6c91c98be048bd4727922effc5be9712ec2633f2"
+        url "https://github.com/hzhang08/gocat/releases/download/0.1.4-x86_64/gocat-0.1.4-macos-x86_64.tar.gz"
+        sha256 "e5ac55a6380f4d41a4e4e1100fd2ce9db5dce602b13a87cf18c93ce21fa490cd"
 
         def install
             bin.install "gocat"
